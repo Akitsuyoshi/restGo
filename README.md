@@ -11,17 +11,19 @@ This simple api is written in golang.
 
 1. Install this repository into your local
 
- `$ git clone https://github.com/Akitsuyoshi/go-json`
+ `$ git clone https://github.com/Akitsuyoshi/restGo`
 
 2. Build the Docker image
 
- `$ docker build -t go-json .`
+ `$ docker build -t restgo .`
 
 3. Run the image
 
- `$ docker run -p 80:80 go-json`
+ `$ docker run -p 80:8080 restgo`
 
-And visit localhost:80 in your browser, you can see the application run.
+And visit http://localhost/v1/ in your browser, you can see the application run.
+
+Also, when you hit http://localhost/v1/todos/, you see all JSON data.
 
 
 If you'd like to stop, follow the commands
